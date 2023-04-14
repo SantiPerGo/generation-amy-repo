@@ -1,0 +1,139 @@
+<!--
+    CSS Styles Hierarchy:
+    Inline > internal > external
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- The meta tags are used to hide important information -->
+
+        <!-- It allows special characters that are used in other languages -->
+        <meta charset="UTF-8">
+
+        <!-- Compatibility with Internet Explorer and Edge -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intro to CSS</title>
+
+        <!-- External CSS styles -->
+        <link rel="stylesheet" href="./css/index.css">
+
+        <!-- Internal CSS styles -->
+        <style>
+            ul {
+                background-color: pink;
+            }
+
+            ol {
+                color: bisque;
+            }
+            
+            /* Class common styles */
+            .container {
+                background-color: darkcyan;
+                font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            }
+
+            /* Id unique style for one element */
+            #unique {
+                background-color: gold;
+            }
+            
+            .movies {
+                background-color: coral;
+            }
+
+            #sonic {
+                color: cornflowerblue;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="./index.html">Index</a>
+            <a href="#">Who we are</a>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.youtube.com/?gl=MX&hl=es">YouTube</a>
+        </nav>
+
+        <!-- Inline CSS styles -->
+        <h1 style="color: azure; font-size: 12px;">
+            What says the music that I hear about me?
+        </h1>
+
+        <ul>
+            <li>Rock</li>
+            <li>Kpop</li>
+            <li>Rap / Hip Hop</li>
+            <li>Classic</li>
+            <li>Electronic</li>
+        </ul>
+
+        <!-- Class property for common styles -->
+        <h1 class="container">Favorites Desserts</h1>
+        <ol>
+            <li>Cheesecake</li>
+            <li>Cake</li>
+            <li>Lemon pie</li>
+        </ol>
+
+        <hr>
+        <div class="container">
+            <!-- Id property for an unique element styles -->
+            <p id="unique">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis eos ut enim, fuga odit nesciunt sunt repudiandae quaerat. Voluptate fugit veritatis corporis nobis? Qui quia earum, dolor iusto incidunt ratione.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nobis harum libero doloremque labore cumque reprehenderit enim, aperiam nemo consectetur cum nesciunt animi! Aut, dolorem eveniet placeat quia aliquid laudantium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae obcaecati, maxime iusto, pariatur aspernatur accusamus corporis soluta quis doloribus non, quod tempore esse culpa? Quibusdam accusamus quia adipisci libero?</p>
+        </div>
+
+        <h1 class="movies">Favorites Movies</h1>
+        <div class="movies">
+            <p><em>Mario Bros</em></p>
+            <p><em id="sonic">Sonic</em></p>
+            <p>Ant man</p>
+            <p>Infinity war</p>
+        </div>
+
+        <div>
+            <p id="line">Hi Im<br>Santi</p>
+            <p>Hi Im German</p>
+            <p>Hi Im Maria</p>
+        </div>
+
+        <div class="container2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatem iste illo dicta nemo quod illum dolorem, soluta nesciunt sapiente autem alias a. Corrupti totam molestias eligendi deserunt obcaecati laboriosam!</p>
+        </div>
+
+        <div class="container3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam voluptatem iste illo dicta nemo quod illum dolorem, soluta nesciunt sapiente autem alias a. Corrupti totam molestias eligendi deserunt obcaecati laboriosam!</p>
+        </div>
+
+        <!-- Trying other CSS properties -->
+        <div>
+            <!-- Vertical align --> <!-- For inline elements and cells of tables -->
+            <p style="font-size: 50px; border: 10px solid white;">Lorem ipsum, <span style="vertical-align: top; color:blueviolet; font-size: 25px">dolor sit amet consectetur</span> adipisicing elit. Sint nam commodi itaque error ab numquam nemo provident, culpa eveniet temporibus iusto minima necessitatibus sequi explicabo facilis quia, qui asperiores. Vitae.</p>
+            <!-- Text indent -->
+            <p style="text-indent: 100px; border: 10px solid white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo quae dignissimos consequuntur, molestias non. Maiores reiciendis in et modi doloribus. Tempore maxime consectetur optio sit aperiam culpa deleniti sint.</p>
+            <!-- Word spacing -->
+            <p style="word-spacing: 100px; border: 10px solid white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+            <!-- White space -->
+            <p style="font-size: 25px; white-space:nowrap; border: 10px solid white;">Lorem,             ipsum dolor sit amet consectetur adipisicing elit. Dolorum eos corrupti aliquid odio debitis distinctio reiciendis ex repellendus qui quisquam ullam, sint sed illo esse natus non iure exercitationem optio?</p>
+            <!-- Text shadow -->  <!-- horizontal vertical blur color -->
+            <p style="text-shadow: 2px 2px 1px lightgoldenrodyellow;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+            <!-- Text align -->
+            <p style="text-align: end; border: 10px solid white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+            <!-- Line height -->
+            <p style="line-height: 50px; border: 10px solid white;">Lorem ipsum, dolor <br> sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+            <!-- Text decoration -->
+            <p style="text-decoration: underline;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+            <!-- Text transform -->
+            <p style="text-transform: uppercase; border: 10px solid white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+            <!-- Letter spacing -->
+            <p style="letter-spacing: 25px; border: 10px solid white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore nihil facere dolores dicta nostrum animi eligendi temporibus amet iste. Minima, id temporibus reprehenderit non quae iste nisi dicta dolor modi?</p>
+        </div>
+
+        <img src="https://i.blogs.es/b09407/trailer-final-mario-bros-pelicula/1366_2000.jpeg"
+            alt="Mario Bros Movie Image" width="1000px" height="500px">
+    </body>
+</html>

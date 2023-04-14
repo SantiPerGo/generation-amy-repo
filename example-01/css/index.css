@@ -1,0 +1,83 @@
+body {
+    background-color: darkgoldenrod;
+}
+
+/* Styles for EM that are son tags of P father tag */
+p em {
+    color: crimson;
+}
+
+/* Styles for P that are son tags of MOVIES father class */
+.movies p {
+    color: darkviolet;
+}
+
+nav {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+nav a {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* Pseudo classes*/
+/* ////////////////////////////////////////////////////// */
+
+/* When the user hover the tag with its cursor */
+nav a:hover {
+    color: chartreuse;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+/* When the user has clicked the tag */
+nav a:visited {
+    color: forestgreen;
+}
+
+/* When the user is pressing the left click at the tag */
+nav a:active {
+    color: aqua;
+    background-color: darkkhaki;
+}
+
+/* ////////////////////////////////////////////////////// */
+/* Pseudo elements */
+/* We use it to design specific parts of a tag */
+/* ////////////////////////////////////////////////////// */
+
+p::first-letter {
+    color: darkblue;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#line::first-line {
+    color: darkblue;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Add content before each A tag */
+a::after {
+    content: "🤣";
+}
+
+/* ////////////////////////////////////////////////////// */
+/* CSS Box Model */
+/* ////////////////////////////////////////////////////// */
+
+.container2 {
+    background-color: brown;
+    margin: 50px;
+    padding: 25px;
+    border: 5px dashed white;
+    border-radius: 25px;
+}
+
+.container3 {
+    background-color: darkseagreen;
+    margin: 50px 500px 25px 0px; /* Top Right Bottom Left */
+    padding: 50px 0px; /* Vertical Horizontal */
+    border: 50px 0px 1000px; /* Top Horizontal Bottom */
+}
