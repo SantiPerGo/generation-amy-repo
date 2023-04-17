@@ -1,0 +1,124 @@
+/* ------------------------------------------------ */
+/* General Styles */
+/* ------------------------------------------------ */
+
+* {
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-size: 3.5vw;
+}
+
+/* ------------------------------------------------ */
+/* Navigator Styles */
+/* ------------------------------------------------ */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    padding: 25px;
+}
+
+nav li select { 
+    width: 100%;
+    display: block;
+    font-size: 1vw;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+#nav-icon {
+    width: 30px;
+    margin-left: 10px;
+}
+
+#nav-title {
+    padding: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+nav a:hover, nav a:visited, nav a:active {
+    border-bottom: 3px solid gray;
+    padding-bottom: 15px;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-right-links a {
+    color: cornflowerblue;
+}
+
+.nav-selector {
+    width: 100px;
+}
+
+.nav-right-links a:hover,
+.nav-right-links a:visited,
+.nav-right-links a:active {
+    text-decoration: underline;
+    border-bottom: none;
+}
+
+/* ------------------------------------------------ */
+/* Title Styles */
+/* ------------------------------------------------ */
+
+#title {
+    padding: 100px;
+}
+
+#title-icon {
+    width: 300px;
+}
+
+.row {
+    display: flex;
+    background-color: #073042;
+    color: white;
+}
+
+.column-1 {
+    flex: 50%;
+
+    /* Top Right Bottom Left */
+    padding: 100px 250px 100px 250px;
+}
+
+.column-2 {
+    flex: 25%;
+    padding-top: 250px;
+    padding-right: 250px;
+}
+
+input {
+    background: url(../img/search.png) no-repeat scroll 10px 10px;
+    background-color: white;
+    background-size: 25px;
+    width: 75%;
+    font-size: 1vw;
+    margin-top: 50px;
+    padding: 10px;
+    padding-left: 40px;
+}
